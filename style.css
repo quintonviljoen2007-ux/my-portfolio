@@ -488,3 +488,313 @@ span{
     color: #555;
     line-height: 1.6;
 }
+
+.experience-page {
+    min-height: 100vh;
+    padding: 120px 8% 70px;
+    background: #f4f4f4;
+}
+
+.experience-hero {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.experience-hero h1 {
+    font-size: 52px;
+    color: #111;
+    margin-bottom: 15px;
+}
+
+.experience-hero h1 span {
+    color: green;
+}
+
+.experience-hero p {
+    max-width: 750px;
+    margin: auto;
+    font-size: 18px;
+    color: #555;
+    line-height: 1.7;
+}
+
+.experience-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 25px;
+    margin-bottom: 70px;
+}
+
+.stat-box {
+    background: white;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 18px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.08);
+    transition: 0.3s ease;
+    border-top: 4px solid green;
+}
+
+.stat-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 30px rgba(255, 69, 0, 0.25);
+}
+
+.stat-box h3 {
+    font-size: 34px;
+    color: green;
+    margin-bottom: 8px;
+}
+
+.stat-box p {
+    font-size: 15px;
+    color: #555;
+    font-weight: 600;
+}
+
+.timeline {
+    max-width: 900px;
+    margin: auto;
+    position: relative;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 30px;
+    top: 0;
+    width: 3px;
+    height: 100%;
+    background: green;
+    border-radius: 10px;
+}
+
+.timeline-item {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 35px;
+    position: relative;
+}
+
+.timeline-icon {
+    min-width: 60px;
+    height: 60px;
+    background: green;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    box-shadow: 0 0 20px rgba(255, 69, 0, 0.5);
+}
+
+.timeline-icon i {
+    font-size: 28px;
+}
+
+.timeline-content {
+    background: white;
+    padding: 28px;
+    border-radius: 18px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.08);
+    transition: 0.3s ease;
+    width: 100%;
+}
+
+.timeline-content:hover {
+    transform: translateX(8px);
+    box-shadow: 0 0 30px rgba(255, 69, 0, 0.25);
+}
+
+.timeline-content span {
+    display: inline-block;
+    color: green;
+    font-weight: 700;
+    margin-bottom: 8px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.timeline-content h3 {
+    font-size: 24px;
+    color: #111;
+    margin-bottom: 10px;
+}
+
+.timeline-content p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.experience-skills {
+    margin-top: 70px;
+    text-align: center;
+}
+
+.experience-skills h2 {
+    font-size: 36px;
+    color: #111;
+    margin-bottom: 30px;
+}
+
+.skill-tags {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skill-tags span {
+    background: #111;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.skill-tags span:hover {
+    background: green;
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(255, 69, 0, 0.4);
+}
+
+/* EDUCATION PAGE */
+
+.education-page {
+    min-height: 100vh;
+    padding: 130px 8% 70px;
+    background: #f4f4f4;
+}
+
+.education-hero {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.education-hero h1 {
+    font-size: 52px;
+    color: #111;
+    margin-bottom: 15px;
+}
+
+.education-hero h1 span {
+    color: green;
+}
+
+.education-hero p {
+    max-width: 750px;
+    margin: auto;
+    font-size: 18px;
+    color: #555;
+    line-height: 1.7;
+}
+
+.education-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-bottom: 70px;
+}
+
+.education-card {
+    background: white;
+    padding: 35px 28px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.08);
+    transition: 0.3s ease;
+    border-top: 4px solid green;
+}
+
+.education-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 30px rgba(0, 255, 136, 0.3);
+}
+
+.education-card i {
+    font-size: 55px;
+    color: green;
+    margin-bottom: 20px;
+}
+
+.education-card span {
+    display: inline-block;
+    color: green;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.education-card h3 {
+    font-size: 24px;
+    color: #111;
+    margin-bottom: 15px;
+}
+
+.education-card p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.learning-section {
+    text-align: center;
+}
+
+.learning-section h2 {
+    font-size: 38px;
+    color: #111;
+    margin-bottom: 35px;
+}
+
+.learning-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.learning-box {
+    background: #111;
+    color: white;
+    padding: 30px 22px;
+    border-radius: 18px;
+    transition: 0.3s ease;
+}
+
+.learning-box:hover {
+    background: green;
+    color: #111;
+    transform: translateY(-8px);
+    box-shadow: 0 0 25px rgba(0, 255, 136, 0.35);
+}
+
+.learning-box i {
+    font-size: 45px;
+    color: green;
+    margin-bottom: 15px;
+}
+
+.learning-box:hover i {
+    color: #111;
+}
+
+.learning-box h4 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.learning-box p {
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+html {
+    scroll-behavior: smooth;
+}

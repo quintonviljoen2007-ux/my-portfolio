@@ -1,105 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Portfolio</title>
-        <link rel="stylesheet" href="style.css" />
-        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-        rel="stylesheet" />
-    </head>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+
 <body>
+
 <header class="header">
-    <a href="#" class="logo"><span>Quin</span>ton</a>
+    <a href="index.html" class="logo"><span>Quin</span>ton</a>
+
     <nav class="navbar">
-        <a href="#" class="active">Portfolio</a>
+        <a href="index.html" class="active">Portfolio</a>
         <a href="services.html">Services</a>
-        <a href="#">Experience</a>
+        <a href="experience.html">Experience</a>
         <a href="projects.html">Projects</a>
-        <a href="#">Education</a>
+        <a href="education.html">Education</a>
     </nav>
 
-    <a href="#" class="contact">Contact Me</a>
+    <a href="#contact" class="contact">Contact Me</a>
 </header>
 
-<section class="home">
-<div class="home-content">
-    <h3>Hello</h3>
+<section class="home" id="home">
+    <div class="home-content">
+        <h3>Hello</h3>
 
-<h1>I'm <span>Quinton<br></span>a Frontend Developer</h1>
+        <h1>I'm <span>Quinton<br></span>a Frontend Developer</h1>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-<div class="btn-box">
-    <button class="btn-1">Hire Me</button>
-    <button class="btn-2">Experience</button>
-</div>
-</div>
+        <p>
+            I am a beginner frontend developer learning HTML, CSS, and JavaScript.
+            I enjoy building clean, responsive websites and improving my skills through real projects.
+        </p>
+
+        <div class="btn-box">
+            <a href="#contact" class="btn-1">Hire Me</a>
+            <a href="experience.html" class="btn-2">Experience</a>
+        </div>
+    </div>
+
     <div class="img-box">
-        <img src="Pfp.jpeg" alt="" />
+        <img src="Pfp.jpeg" alt="Quinton profile picture" />
     </div>
 </section>
-<div class="section about">
 
+<section class="about" id="about">
     <div class="about-img">
-        <img src="Pfp.jpeg" alt="" />
+        <img src="Pfp.jpeg" alt="Quinton profile picture" />
     </div>
     
     <div class="about-content">
-        <h2 class="heading">About <span>Me:`</span></h2>
+        <h2 class="heading">About <span>Me</span></h2>
         <h3>Frontend <span>Developer</span></h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <a href="#" class="btn-2">Experience</a>
-    </div>
-    </section>
-</div>
 
-<section class="contact-form">
+        <p>
+            I am currently learning frontend development and building real projects to grow my skills.
+            My focus is on creating modern, responsive, and user-friendly websites using HTML, CSS, and JavaScript.
+        </p>
+
+        <a href="experience.html" class="btn-2">Experience</a>
+    </div>
+</section>
+
+<section class="contact-form" id="contact">
     <h2 class="contact-me">Contact <span>Me</span></h2>
 
-    <form action="#">
+    <form action="https://formspree.io/f/mvzjakab" method="POST">
 
         <div class="input-box">
-            <input type="text" placeholder="Full Name">
-            <input type="email" placeholder="Email">
+            <input type="text" name="name" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Email" required>
         </div>
 
         <div class="input-box">
-            <input type="number" placeholder="Phone Number">
-            <input type="text" placeholder="Subject">
+            <input type="tel" name="phone" placeholder="Phone Number">
+            <input type="text" name="subject" placeholder="Subject">
         </div>
 
-        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+        <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+
         <input type="submit" value="Send Message" class="btn-1">
     </form>
 </section>
 
 <footer class="footer">
-
     <div class="social">    
-        <a href="#"><i class="bx bxl-linkedin"></i></a>
-        <a href="#"><i class="bx bxl-instagram"></i></a>
-        <a href="https://github.com/quintonviljoen2007-ux"><i class="bx bxl-github"></i></a>
+        <a href="#" target="_blank">
+            <i class="bx bxl-linkedin"></i>
+        </a>
+
+        <a href="#" target="_blank">
+            <i class="bx bxl-instagram"></i>
+        </a>
+
+        <a href="https://github.com/quintonviljoen2007-ux" target="_blank">
+            <i class="bx bxl-github"></i>
+        </a>
     </div>
 
     <ul class="list">
         <li>
             <a href="#">FAQ</a>
         </li>
+
         <li>
             <a href="services.html">Services</a>
         </li>
+
         <li>
-            <a href="#">About Me</a>
+            <a href="#about">About Me</a>
         </li>
+
         <li>
-            <a href="#">Contact</a>
+            <a href="#contact">Contact</a>
         </li>
+
         <li>
             <a href="#">Privacy Policy</a>
         </li>
     </ul>
 
-    <p class="copyright">© 2023 Quinton | All rights reserved</p>
+    <p class="copyright">© 2026 Quinton | All rights reserved</p>
 </footer>
+
 </body>
 </html>
