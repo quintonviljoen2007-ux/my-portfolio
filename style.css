@@ -335,3 +335,77 @@ span{
 .project-buttons a:hover {
     background: #111;
 }
+
+@media (max-width: 768px) {
+
+    .header {
+        padding: 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .navbar a {
+        font-size: 14px;
+        margin: 5px;
+    }
+
+    .contact {
+        display: none;
+    }
+
+    .home {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 120px 20px 50px;
+    }
+
+    .home-content h1 {
+        font-size: 36px;
+    }
+
+    .home-content p {
+        font-size: 16px;
+    }
+
+    .btn-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .btn-1,
+    .btn-2 {
+        width: 200px;
+    }
+
+    .img-box img,
+    .about-img img {
+        width: 250px;
+    }
+
+    .about {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 20px;
+    }
+
+    .contact-form form {
+        width: 90%;
+    }
+
+    .input-box {
+        flex-direction: column;
+    }
+
+    .input-box input {
+        width: 100%;
+    }
+}
