@@ -253,3 +253,85 @@ span{
     font-size: 12px;
     margin-top: 15px;
 }
+
+.projects-page {
+    min-height: 100vh;
+    padding: 120px 8% 60px;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+.projects-page h1 {
+    font-size: 48px;
+    color: #111;
+    margin-bottom: 15px;
+}
+
+.projects-page h1 span {
+    color: green;
+}
+
+.projects-intro {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 50px;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.project-card {
+    background: white;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 30px rgba(255, 69, 0, 0.3);
+}
+
+.project-card i {
+    font-size: 50px;
+    color: green;
+    margin-bottom: 20px;
+}
+
+.project-card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #111;
+}
+
+.project-card p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.project-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.project-buttons a {
+    display: inline-block;
+    padding: 12px 22px;
+    background: green;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.project-buttons a:hover {
+    background: #111;
+}
